@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Survey from './pages/Survey'
 import Header from './components/Header'
 import Error from './components/Error'
+import Freelance from './pages/Freelance'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/freelance" element={<Freelance />} />
         <Route path="/survey/:questionNumber" element={<Survey />} />
         <Route path="*" element={<Error />} />
       </Routes>
